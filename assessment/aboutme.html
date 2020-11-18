@@ -5,30 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Me</title>
   </head>
+  
+  <!-- ***
+       One problem here is that you've not uploaded your media to GitHub, so none of 
+       your images or the audio have loaded :(
+
+       These need to be uploaded to GitHub, keeping the same folder structure and naming as you 
+       have on your own computer. 
+      
+       I've put a video on Blackboard showing how to upload a whole folder - It's in the Learning Materials section.
+       *** -->
+ 
   <body style="background-color:#F5F5DC">
+    <!-- ***
+         You've used empty class names. This is redudant. 
+
+         You can just use <div>.
+         *** -->
     <div class="">
+      
+      <!-- ***
+           This is good. The final <source> element of the three has the type wrong. It's a wav file, so the type
+           attribute should have the value "audio/wav".
+
+           Additionally, you should include some text after the <source> elements, but before the closing </audio> tag
+           that will be shown in browsers that don't support the <audio> element. It's common for this to include a 
+           link to download an mp3 version.
+           *** -->
       <audio controls loop>
-            <source src="audio\Foals - Spanish Sahara.ogg" type="audio/ogg">
-        <source src="audio\Foals - Spanish Sahara (128 kbps).mp3" type="audio/mpeg">
+          <source src="audio\Foals - Spanish Sahara.ogg" type="audio/ogg">
+          <source src="audio\Foals - Spanish Sahara (128 kbps).mp3" type="audio/mpeg">
           <source src="audio\Foals - Spanish Sahara (128 kbps) (online-audio-converter.com).wav" type="audio/mpeg">
       </audio>
+      
+      <!-- ***
+           You've wrapped this <h1> in an <a> element. <a> elements are used to provide clickable links to either
+           another place in the same page, or to a different page or site entirely. 
+
+           You seem to be using <a> elements to apply style.
+           *** -->
       <a style="font-family:'Lucida Console'">
-      <h1 style="color:#808000"">About Me</h1>
-    </a>
-    <img src="img\67359984_2371559796258783_8074023262138400768_o.jpg" alt="me"width="300" height="300">
-<a style="font-family:'Courier New'">
-    <p style="color:#191970">Hi, I'm Ana, but everyone calls me Cassie, and this page is going to be about me and the things that I love.</p>
-</a>
-      </div>
-      <div class="">
+        <h1 style="color:#808000"">About Me</h1>
+      </a>
+      <img src="img\67359984_2371559796258783_8074023262138400768_o.jpg" alt="me"width="300" height="300">
+      <a style="font-family:'Courier New'">
+        <p style="color:#191970">Hi, I'm Ana, but everyone calls me Cassie, and this page is going to be about me and the things that I love.</p>
+      </a>
+     </div>
+     <div class="">
         <a style="font-family:'Lucida Console'">
-    <h2 style="color:#808000">Artists and Music</h2>
-</a>
-<img src="img\Borderline-Single-1024x1024-2-1012x675.jpg" alt="cover"width="300" height="300">
-<a style="font-family:'Courier New'">
-<p style="color:#7B68EE"> I could (and maybe I should) write some things about my personality but I actually don't know what type of person I am. So let's talk about my favorite artists and songs!</p>
-<p style="color:#191970"> I really like indie and rock music. Some of my favourite are:</p>
-</a>
+          <h2 style="color:#808000">Artists and Music</h2>
+        </a>
+        <img src="img\Borderline-Single-1024x1024-2-1012x675.jpg" alt="cover"width="300" height="300">
+        <a style="font-family:'Courier New'">
+          <p style="color:#7B68EE"> I could (and maybe I should) write some things about my personality but I actually don't know what type of person I am. So let's talk about my favorite artists and songs!</p>
+          <p style="color:#191970"> I really like indie and rock music. Some of my favourite are:</p>
+        </a>
 <ol style="font-family:'Courier New'">
     <li style="color:#7B68EE">Mac DeMarco</li>
     <li style="color:#191970">Alt-J</li>
@@ -85,6 +117,11 @@ I like the aesthetics that these directors give to the films:</p>
 <a style="font-family:'Courier New'">
 <p style="color:#7B68EE">I do experimental videos as an hobbie and it's one of my biggest passions.</p>
 </a>
+                        
+<!-- ***
+     As with the <audio> element, you should include some text here as a fallback for 
+     older browsers. 
+     *** -->
 <video width="600" height="600" controls poster="13SURFACING-CLOUDS-SUZANNE-12-mobileMasterAt3x.jpg">
   <source src="video\summer.mp4" type="video/mp4">
   <source src="video\y2mate.com-summer._480p.ogv" type="video/ogv">
