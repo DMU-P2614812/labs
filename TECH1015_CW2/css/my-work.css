@@ -1,0 +1,29 @@
+h2 , p {
+    text-align: center;
+}
+/*PHOTOGRAPHY*/
+#photography .card img {
+    width: 100%
+}
+
+/*PAINTINGS*/
+#paintings .card .img-container, #photography-directional .card .img-container{
+    width: auto;
+    height: 100%;
+    text-align: center;
+}
+
+/*VIDEO*/
+iframe {
+    width: 100%;
+    height: 650px;
+}
+
+/*IMAGES*/
+.w-100 {
+    width: 100%
+}
+
+.h-100 {
+    height: 650px;
+}

@@ -1,0 +1,35 @@
+h2, p {
+    text-align: center;
+}
+
+/*SOCIAL MEDIA*/
+#social-media .card {
+    max-width: 70px;
+    min-width: initial;
+    max-height: 70px;
+    padding: 20px;
+    border-radius: 35px;
+}
+
+#social-media .card .img-container img {
+    width: 100%;
+}
+
+#social-media a:hover {
+    background-color: var(--light);
+}
+
+/*CONTACTS*/
+#contact-me .container {
+    flex-direction: column; /*make section flow vertical*/
+}
+
+#contact-me h4 {
+    color: var(--subtitle);
+}
+
+#contact-me p {
+    text-align: left;
+}
+
+

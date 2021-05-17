@@ -1,0 +1,58 @@
+/*INTRODUCTION*/
+#introduction .img-container {
+    width: 30%;
+    min-width: 450px
+}
+
+#introduction .text-container {
+    padding: 100px;
+    flex: 1
+}
+
+#introduction .img-container img {
+    width: 100%
+}
+
+/*MY SKILLS*/
+#my-skills {
+    text-align: center;
+}
+
+#my-skills .card{
+    height: 390px;
+}
+
+#my-skills .card .img-container {
+    height: 250px;
+}
+
+#my-skills .placeholder{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--text);
+    font-weight: bold;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#my-skills .card .img-container:hover img{
+    opacity: 0.35;
+    cursor: pointer;
+}
+
+#my-skills .card .img-container:hover .placeholder {
+    opacity: 1;
+}
+
+.card img {
+    width: 100%
+}
+
+
+

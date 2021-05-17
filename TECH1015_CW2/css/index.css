@@ -1,0 +1,153 @@
+/*GLOBAL*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*VARIABLES*/
+:root {
+    --footer: #1D2124;
+    --text: #545454;
+    --grey: rgba(166,166,166,0.5);
+    --whitish: #e7f0f1;
+    --light: #c9e5f5;
+    --light-blue: #E7ECEF;
+    --title: #242424;
+    --subtitle: #568DB1;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+}
+
+body {
+    margin: 0;
+    transition: all 1s ease;
+    position: relative;
+    padding-bottom: 250px;
+    min-height: calc(100vh - 250px);
+}
+
+section {
+    padding-top: 100px;
+}
+
+/*TEXT STYLES*/
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h2 {
+    color: var(--subtitle);
+    font-size: 25px;
+
+}
+
+h3, h4 {
+    margin: 0;
+}
+
+h3 {
+    margin: 15px 0 0 15px ;
+    color: white;
+}
+
+p {
+    color: var(--text);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*CARDS*/
+.container {
+    display: flex; /*Cards next to each other*/
+    padding: 0 100px;
+    flex-wrap:  wrap;
+    justify-content: center; /*Center all text*/
+}
+
+.card {
+    flex: 1 1;
+    width: calc(100% / 3);
+    max-width: 500px;
+    margin: 35px;
+    padding: 60px;
+    background-color: var(--light-blue);
+    position: relative;
+    min-width: 240px;
+    align-self: center;
+    /*shadow for multiple browsers*/
+    -webkit-box-shadow: 10px 10px 20px -4px var(--grey);
+    -moz-box-shadow: 10px 10px 20px -4px var(--grey);
+    box-shadow: 10px 10px 20px -4px var(--grey);
+}
+
+.card .img-container {
+    margin: auto;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 450px;
+}
+
+/*SEPARATOR*/
+hr {
+    border: 0;
+    height: 2px;
+    background: var(--light);
+    background-image: linear-gradient(to right, var(--whitish), var(--light), var(--whitish)); /*Gradient Background*/
+    margin: 100px 100px 0 100px;
+}
+
+/*FOOTER*/
+.footer {
+    height: 200px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--footer);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.footer .container {
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.footer .container .f-menu a:hover p {
+    color: var(--whitish);
+}
+
+.footer .f-social a {
+    width: 35px;
+    display: inline-block;
+    margin: 5px;
+}
+
+
+.footer .f-social a:hover {
+    opacity: 0.5;
+}
+
+.footer .f-social b {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer b {
+    color: #9B9B9B;
+}
+
+.footer img  {
+   width: 100%;
+}
+
+.footer a, .footer p  {
+    color: #7C7C7C;
+}
+
